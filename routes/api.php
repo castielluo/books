@@ -45,6 +45,20 @@ $api->version('v1', function (Router $api) {
 
     $api->get('kinds', 'App\\Api\\V1\\Controllers\\BooksController@kinds');
     $api->post('kindbooks', 'App\\Api\\V1\\Controllers\\BooksController@kindbooks');
+    $api->post('thebook', 'App\\Api\\V1\\Controllers\\BooksController@thebook');
+    $api->post('addbook', 'App\\Api\\V1\\Controllers\\BooksController@addbook');
+    $api->post('adduser', 'App\\Api\\V1\\Controllers\\BooksController@addUser');
     $api->post('scanbook', 'App\\Api\\V1\\Controllers\\BooksController@scanbook');
     $api->post('login', 'App\\Api\\V1\\Controllers\\BooksController@login');
+    $api->post('addcomment', 'App\\Api\\V1\\Controllers\\BooksController@addcomment');
+    $api->post('mybook', 'App\\Api\\V1\\Controllers\\BooksController@mybook');
+    $api->post('getcity', 'App\\Api\\V1\\Controllers\\BooksController@getcity');
+    $api->post('me', 'App\\Api\\V1\\Controllers\\BooksController@me');
+    $api->post('scoreit', 'App\\Api\\V1\\Controllers\\BooksController@addstar');
+    $api->post('otheruser', 'App\\Api\\V1\\Controllers\\BooksController@otheruser');
+    $api->post('orderusers', 'App\\Api\\V1\\Controllers\\BooksController@orderusers');
+    $api->post('borrowit', 'App\\Api\\V1\\Controllers\\BooksController@borrowit');
+    $api->post('getAccessToken', 'App\\Api\\V1\\Controllers\\BooksController@getAccessToken');
+    $api->post('handleborrow', 'App\\Api\\V1\\Controllers\\BooksController@handleborrow');
 });
+

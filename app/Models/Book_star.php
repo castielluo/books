@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Book_tag extends Model
+class Book_star extends Model
 {
-    public $timestamps = false;
+    //
 }
